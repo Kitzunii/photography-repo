@@ -33,7 +33,7 @@ email: le.brian9782@gmail.com
 theme: minima
 plugins:
   - jekyll-feed
-
+  - jekyll-archives
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -56,3 +56,9 @@ exclude:
   - vendor/ruby/
   - template/
   - README.md
+
+jekyll-archives:
+  enabled: all
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
